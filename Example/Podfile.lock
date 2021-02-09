@@ -1,0 +1,16 @@
+PODS:
+  - SocketIOClient (0.1.0)
+
+DEPENDENCIES:
+  - SocketIOClient (from `../`)
+
+EXTERNAL SOURCES:
+  SocketIOClient:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SocketIOClient: 26b24c5b85087350ccb1609b4bb2c25486835803
+
+PODFILE CHECKSUM: 1a18ce37685575c8493b3338a23db5424e8eabcd
+
+COCOAPODS: 1.10.1
