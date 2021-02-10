@@ -49,7 +49,7 @@ class SocketIOManager {
 //        self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: SOCKET_ID or sid: \(self.socket.sid)")
     }
     //
-    public func connect(handler: @escaping (Any, SocketAckEmitter?) -> Void) {
+    public func connect() {
         socket.on(clientEvent: .connect) {data, ack in
             print("DEBUG_SOCKET_IO_MANAGER: SOCKET_ID or sid: \(self.socket.sid) File: \(#file) Line: \(#line)")
             print("DEBUG_SOCKET_IO_MANAGER: socket name: \(SocketClientEvent.connect) \(self.httpURL) File: \(#file) Line: \(#line)")
@@ -57,7 +57,7 @@ class SocketIOManager {
 //            onEventSocketIO!(data, ack)
         }
     }
-    public func socketOn(name: String, handler: @escaping (String, Any, SocketAckEmitter) -> Void) {
+    public func socketOn(name: String) {
         socket.on(clientEvent: .connect) {data, ack in
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: SOCKET_ID or sid: \(self.socket.sid)")
             print("DEBUG_SOCKET_IO_MANAGER: SOCKET_ID or sid: \(self.socket.sid) File: \(#file) Line: \(#line)")
@@ -68,7 +68,7 @@ class SocketIOManager {
         socket.on(name) {data, ack in
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: Socket on \(name) \(data) : \(self.httpURL)")
             print("DEBUG_SOCKET_IO_MANAGER: socket name: \(name) File: \(#file) Line: \(#line)")
-            handler(name, data, ack)
+//            handler(name, data, ack)
 //            onEventSocketIO?(name, data, ack)
         }
         if (self.socket?.status == .disconnected || self.socket?.status == .notConnected ) {
@@ -77,17 +77,17 @@ class SocketIOManager {
         }
     }
     //
-    public func socketOn(name: String, handler: @escaping (Any, SocketAckEmitter) -> Void) {
-        socket.on(name) {data, ack in
-            self.debugLog(message: "Socket on \(name) : \(self.httpURL)")
-            handler(data, ack)
-        }
-    }
-    public func socketOn(name: String) {
-        socket.on(name) {data, ack in
-            self.debugLog(message: "Socket on \(name) \(data) : \(self.httpURL)")
-        }
-    }
+//    public func socketOn(name: String, handler: @escaping (Any, SocketAckEmitter) -> Void) {
+//        socket.on(name) {data, ack in
+//            self.debugLog(message: "Socket on \(name) : \(self.httpURL)")
+//            handler(data, ack)
+//        }
+//    }
+//    public func socketOn(name: String) {
+//        socket.on(name) {data, ack in
+//            self.debugLog(message: "Socket on \(name) \(data) : \(self.httpURL)")
+//        }
+//    }
     public func disconnect() {
         close()
         
