@@ -8,6 +8,7 @@
 import Foundation
 import SocketIO
 
+var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
 class SocketIOManager {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
@@ -71,7 +72,7 @@ class SocketIOManager {
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: Socket on \(name) \(data) : \(self.httpURL)")
             print("DEBUG_SOCKET_IO_MANAGER: socket name: \(name) File: \(#file) Line: \(#line)")
             handler(name, data, ack)
-//            onEventSocketIO?(name, data, ack)
+            onEventSocketIO(name, data, ack)
         }
 //        socket.on("message") {data, ack in
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: Socket on \(name) \(data) : \(self.httpURL)")
