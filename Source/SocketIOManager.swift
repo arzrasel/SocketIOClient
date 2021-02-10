@@ -112,5 +112,6 @@ class SocketIOManager {
         print("\(message) \(self.httpURL) File: \(#file) Line: \(#line)")
     }
 }
-typealias EventSocketIO = (String, Any, SocketAckEmitter) -> Void
-var onEventSocketIO: (EventSocketIO)?
+//typealias EventSocketIO = (String, Any, SocketAckEmitter) -> Void
+//var onEventSocketIO: (EventSocketIO)?
+var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)?

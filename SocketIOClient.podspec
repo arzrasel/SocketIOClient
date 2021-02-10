@@ -11,6 +11,7 @@
 #   * Push to git and release
 #   * pod trunk register rashedgit@gmail.com 'Rz Rasel'
 #   * pod lib lint SocketIOClient.podspec --allow-warnings
+#   * [pod lib lint SocketIOClient.podspec --allow-warnings --no-clean --verbose]
 #   * pod trunk push --allow-warnings
 # UPDATE
 #   * pod lib lint --allow-warnings
