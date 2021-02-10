@@ -71,7 +71,7 @@ class SocketIOManager {
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: Socket on \(name) \(data) : \(self.httpURL)")
             print("DEBUG_SOCKET_IO_MANAGER: socket name: \(name) File: \(#file) Line: \(#line)")
             handler(name, data, ack)
-            onEventSocketIO?(name, data, ack)
+//            onEventSocketIO?(name, data, ack)
         }
 //        socket.on("message") {data, ack in
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: Socket on \(name) \(data) : \(self.httpURL)")
@@ -104,12 +104,12 @@ class SocketIOManager {
 ////            onEventSocketIO!(data, ack)
 //        }
 //    }
-    public func socketOn(name: String) {
-        socket.on(name) {data, ack in
-            print("Socket on \(name) \(data) : \(self.httpURL) \(#file):\(#line)")
-            onEventSocketIO!(name, data, ack)
-        }
-    }
+//    public func socketOn(name: String) {
+//        socket.on(name) {data, ack in
+//            print("Socket on \(name) \(data) : \(self.httpURL) \(#file):\(#line)")
+//            onEventSocketIO!(name, data, ack)
+//        }
+//    }
     public func emit(name: String, params: SocketData) {
 //        self.socket.emit(name, params)
 //        socket.on(clientEvent: .connect) {data, ack in
@@ -148,8 +148,9 @@ class SocketIOManager {
         print("DEBUG_SOCKET_IO_MANAGER: \(message) \(self.httpURL) File: \(#file) Line: \(#line)")
     }
 }
-typealias EventSocketIO = (String, Any, SocketAckEmitter) -> Void
-var onEventSocketIO: (EventSocketIO)?
+//typealias EventSocketIO = (String, Any, SocketAckEmitter) -> Void
+//var onEventSocketIO: (EventSocketIO)?
+//var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)
 class SocketIOManagerOld01 {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!

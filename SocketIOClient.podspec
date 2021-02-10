@@ -18,11 +18,11 @@
 #   * [pod lib lint --allow-warnings --no-clean --verbose]
 #   * Push to git and release
 #   * pod trunk push --allow-warnings ORRR>> pod trunk push SocketIOClient.podspec --allow-warnings
-# SocketIOClient Version - 0.1.0.02
+# SocketIOClient Version - 0.1.0.01
 
 Pod::Spec.new do |s|
   s.name             = 'SocketIOClient'
-  s.version          = '0.1.0.02'
+  s.version          = '0.1.0.01'
   s.summary          = 'A short description of SocketIOClient.'
 
 # This description is used to generate tags and improve search results.
