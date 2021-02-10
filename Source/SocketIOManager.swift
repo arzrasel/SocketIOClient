@@ -57,7 +57,7 @@ class SocketIOManager {
 //            onEventSocketIO!(data, ack)
         }
     }
-    public func socketOn(name: String, handler: @escaping (Any, SocketAckEmitter) -> Void) {
+    public func socketOn(name: String, handler: @escaping ([Any], SocketAckEmitter) -> Void) {
         socket.on(clientEvent: .connect) {data, ack in
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: SOCKET_ID or sid: \(self.socket.sid)")
             print("DEBUG_SOCKET_IO_MANAGER: SOCKET_ID or sid: \(self.socket.sid) File: \(#file) Line: \(#line)")
@@ -69,7 +69,7 @@ class SocketIOManager {
 //            self.debugLog(message: "DEBUG_SOCKET_IO_MANAGER: Socket on \(name) \(data) : \(self.httpURL)")
             print("DEBUG_SOCKET_IO_MANAGER: socket name: \(name) File: \(#file) Line: \(#line)")
             handler(name, data, ack)
-            onEventSocketIO?(name, data, ack)
+//            onEventSocketIO?(name, data, ack)
         }
         if (self.socket?.status == .disconnected || self.socket?.status == .notConnected ) {
             socketManager.connect()
@@ -117,4 +117,4 @@ class SocketIOManager {
 }
 //typealias EventSocketIO = (String, Any, SocketAckEmitter) -> Void
 //var onEventSocketIO: (EventSocketIO)?
-var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)?
+//var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)?
