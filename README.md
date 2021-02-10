@@ -24,9 +24,15 @@ it, simply add the following line to your Podfile:
 pod 'SocketIOClient'
 ```
 
+or
+
+```SocketIOClientMain
+pod 'SocketIOClient', '~> 0.1'
+```
+
 ## Author
 
-Md. Rashed - Uz - Zaman (Rz Rasel), 77522472+arzrasel@users.noreply.github.com
+Md. Rashed - Uz - Zaman (Rz Rasel)
 
 ## License
 

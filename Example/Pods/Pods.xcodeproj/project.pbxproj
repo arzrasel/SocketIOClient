@@ -12,6 +12,7 @@
 		581E0E498312F103907D73B65D5A5FAE /* Pods-SocketIOClient_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C40EAEC3E0F0C3B972E894B8BA8D69 /* Pods-SocketIOClient_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		753308804E0B3F189E488295985C776F /* Pods-SocketIOClient_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6ABE5D3F6A3337C8E8F5055E52423A /* Pods-SocketIOClient_Tests-dummy.m */; };
 		8799ACB3A964F53E7D7247D60654FF9E /* Pods-SocketIOClient_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC9508E073537C3411FE9B96A70BB /* Pods-SocketIOClient_Example-dummy.m */; };
+		8871BD4825D392E600270E97 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871BD4725D392E600270E97 /* SocketIOManager.swift */; };
 		9854778768B6611A6D88BDE903F57FB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9BE2A4A3C135CD284C76497C3F30395E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C1980605FA141009FE564B9405363BAF /* SocketIOClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE215E8D8BFC559D79C0D53F0644E5A0 /* SocketIOClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,21 +40,22 @@
 /* Begin PBXFileReference section */
 		1E171DC4FE298670AC886F20173D1C8C /* Pods-SocketIOClient_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocketIOClient_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		37A97CBE567624A9BA441E96DC8EA0F3 /* Pods-SocketIOClient_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocketIOClient_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		37DC1166C747666CF813B7B28C53AFFF /* Pods_SocketIOClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocketIOClient_Tests.framework; path = "Pods-SocketIOClient_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37DC1166C747666CF813B7B28C53AFFF /* Pods_SocketIOClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIOClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DBE0BC215E6ED945E5CB741D58BC9 /* Pods-SocketIOClient_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SocketIOClient_Tests.modulemap"; sourceTree = "<group>"; };
 		4D40F875D69102D52DDD908BC6736BA3 /* SocketIOClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SocketIOClient.modulemap; sourceTree = "<group>"; };
 		5E51F61BBE3C42C9F8CBCA98B8662974 /* Pods-SocketIOClient_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocketIOClient_Example-umbrella.h"; sourceTree = "<group>"; };
 		5FEFE690D485556F4F81DB834A3725BB /* SocketIOClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketIOClient-dummy.m"; sourceTree = "<group>"; };
 		6B6ABE5D3F6A3337C8E8F5055E52423A /* Pods-SocketIOClient_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SocketIOClient_Tests-dummy.m"; sourceTree = "<group>"; };
-		6F09DFAC40804B7E9C138207FC12A99D /* SocketIOClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketIOClient.framework; path = SocketIOClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7116585DD5506A970B068B2875A0E6B3 /* Pods_SocketIOClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocketIOClient_Example.framework; path = "Pods-SocketIOClient_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F09DFAC40804B7E9C138207FC12A99D /* SocketIOClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIOClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7116585DD5506A970B068B2875A0E6B3 /* Pods_SocketIOClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIOClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		731100A2ECE5A7322CC77D1CAEDD26DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		731100A2ECE5A7322CC77D1CAEDD26DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		797253561D8253E47843672C3D4208A6 /* Pods-SocketIOClient_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocketIOClient_Tests-Info.plist"; sourceTree = "<group>"; };
 		8669271BEA50BB36D148A588818C0FE5 /* Pods-SocketIOClient_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocketIOClient_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		886B108DB00EB9CF5DCC2BE38ABEA1D0 /* SocketIOClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SocketIOClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		886B108DB00EB9CF5DCC2BE38ABEA1D0 /* SocketIOClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SocketIOClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8871BD4725D392E600270E97 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		8D3CBE90AC3F5582E755CA67285930F9 /* Pods-SocketIOClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocketIOClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A290005B2022581A279A7AE83413F33D /* Pods-SocketIOClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocketIOClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ABC196335F396F469D4B863D38965FDE /* Pods-SocketIOClient_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocketIOClient_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B246BE5B50A99A0AF4EE1935F389EEBD /* Pods-SocketIOClient_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocketIOClient_Example-Info.plist"; sourceTree = "<group>"; };
@@ -63,7 +65,7 @@
 		C5FFBD0F6C5E5950BA4D7A10F6A93444 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SocketIOClient/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		C8E7AC7C6DA8AAC8B0182B7E1EFAF9DB /* SocketIOClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SocketIOClient-Info.plist"; sourceTree = "<group>"; };
 		D6C40EAEC3E0F0C3B972E894B8BA8D69 /* Pods-SocketIOClient_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocketIOClient_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D8DEF64B8B055E5AFFD61A785080F095 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D8DEF64B8B055E5AFFD61A785080F095 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D9D187DAB9EF2C987404577FAE79E092 /* SocketIOClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketIOClient.debug.xcconfig; sourceTree = "<group>"; };
 		DCAD0909AC8D429C62F1B61BA820FE15 /* Pods-SocketIOClient_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SocketIOClient_Example.modulemap"; sourceTree = "<group>"; };
 		DF9892C78E93D277BFD7B3B3AD06F85A /* Pods-SocketIOClient_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocketIOClient_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		8871BD4625D392C300270E97 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8871BD4725D392E600270E97 /* SocketIOManager.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		C06408051362277105654AEFB5ADB7DA /* Pods-SocketIOClient_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,8 +217,9 @@
 		D0BB41AC68FB4991BED032D5CCF53E46 /* SocketIOClient */ = {
 			isa = PBXGroup;
 			children = (
-				C5FFBD0F6C5E5950BA4D7A10F6A93444 /* ReplaceMe.swift */,
+				8871BD4625D392C300270E97 /* Source */,
 				056DCAD3A6AC1EC75343F62167E8FEF0 /* Pod */,
+				C5FFBD0F6C5E5950BA4D7A10F6A93444 /* ReplaceMe.swift */,
 				238A1CA7F3B7F3262681AD54183234F5 /* Support Files */,
 			);
 			name = SocketIOClient;
@@ -317,6 +328,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					AE9C296C1EE18A4C10E83AEEB55605D2 = {
+						LastSwiftMigration = 1240;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -377,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8799ACB3A964F53E7D7247D60654FF9E /* Pods-SocketIOClient_Example-dummy.m in Sources */,
+				8871BD4825D392E600270E97 /* SocketIOManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +494,7 @@
 			baseConfigurationReference = BE933076BF2673D70064C606D37A0BAF /* Pods-SocketIOClient_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -498,6 +516,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -510,6 +529,7 @@
 			baseConfigurationReference = ABC196335F396F469D4B863D38965FDE /* Pods-SocketIOClient_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -531,6 +551,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -718,8 +740,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
