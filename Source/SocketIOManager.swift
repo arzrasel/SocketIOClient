@@ -9,7 +9,7 @@ import Foundation
 import SocketIO
 
 var onListenerSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
-class SocketIOManager {
+public class SocketIOManager {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
     public var resetAckEmitter: SocketAckEmitter?
