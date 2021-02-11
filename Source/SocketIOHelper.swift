@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SocketIO
 
 public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
 public class SocketIOHelper {
