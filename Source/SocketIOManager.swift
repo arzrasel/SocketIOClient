@@ -8,8 +8,8 @@
 import Foundation
 import SocketIO
 
-var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
-class SocketIOManager {
+public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+public class SocketIOManager {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
     public var resetAckEmitter: SocketAckEmitter?

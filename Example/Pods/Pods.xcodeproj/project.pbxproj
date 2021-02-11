@@ -17,7 +17,6 @@
 		9BE2A4A3C135CD284C76497C3F30395E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C1980605FA141009FE564B9405363BAF /* SocketIOClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE215E8D8BFC559D79C0D53F0644E5A0 /* SocketIOClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D69B867F76004ECA6DDFC8CF6B62DE6F /* Pods-SocketIOClient_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E51F61BBE3C42C9F8CBCA98B8662974 /* Pods-SocketIOClient_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6D89FC2108DE6D734B4F1EC4AA38F36 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FFBD0F6C5E5950BA4D7A10F6A93444 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		BE215E8D8BFC559D79C0D53F0644E5A0 /* SocketIOClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketIOClient-umbrella.h"; sourceTree = "<group>"; };
 		BE933076BF2673D70064C606D37A0BAF /* Pods-SocketIOClient_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocketIOClient_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BFCC3D38D7EA5B239869F47EFCB9CC98 /* Pods-SocketIOClient_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocketIOClient_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C5FFBD0F6C5E5950BA4D7A10F6A93444 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SocketIOClient/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		C8E7AC7C6DA8AAC8B0182B7E1EFAF9DB /* SocketIOClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SocketIOClient-Info.plist"; sourceTree = "<group>"; };
 		D6C40EAEC3E0F0C3B972E894B8BA8D69 /* Pods-SocketIOClient_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocketIOClient_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D8DEF64B8B055E5AFFD61A785080F095 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 			children = (
 				8871BD4625D392C300270E97 /* Source */,
 				056DCAD3A6AC1EC75343F62167E8FEF0 /* Pod */,
-				C5FFBD0F6C5E5950BA4D7A10F6A93444 /* ReplaceMe.swift */,
 				238A1CA7F3B7F3262681AD54183234F5 /* Support Files */,
 			);
 			name = SocketIOClient;
@@ -383,7 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6D89FC2108DE6D734B4F1EC4AA38F36 /* ReplaceMe.swift in Sources */,
 				4CAD766E63F74EFF38FDE2D4EA23A21C /* SocketIOClient-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,11 +18,11 @@
 #   * [pod lib lint --allow-warnings --no-clean --verbose]
 #   * Push to git and release
 #   * pod trunk push --allow-warnings ORRR>> pod trunk push SocketIOClient.podspec --allow-warnings
-# SocketIOClient Version - 0.1.0.02
+# SocketIOClient Version - 0.1.0.03
 
 Pod::Spec.new do |s|
   s.name             = 'SocketIOClient'
-  s.version          = '0.1.0.02'
+  s.version          = '0.1.0.03'
   s.summary          = 'A short description of SocketIOClient.'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/arzrasel/SocketIOClient'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Md. Rashed - Uz - Zaman' => 'rashedgit@gmail.com' }
+  s.author           = { 'Md. Rashed - Uz - Zaman (Rz Rasel)' => 'rashedgit@gmail.com' }
   s.source           = { :git => 'https://github.com/arzrasel/SocketIOClient.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
