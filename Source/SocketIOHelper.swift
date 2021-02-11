@@ -8,7 +8,6 @@
 import Foundation
 import SocketIO
 
-public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
 public class SocketIOHelper {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
@@ -112,10 +111,4 @@ public class SocketIOHelper {
         print("DEBUG_SOCKET_IO_MANAGER: \(message) \(self.httpURL) File: \(#file) Line: \(#line)")
     }
 }
-open class SocketIOTest {
-    public private(set) var anyHandler: ((SocketAnyEvent) -> ())?
-    public private(set) var handlers = [SocketEventHandler]()
-}
-public final class SocketAnyEventTest {
-    //
-}
+public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
