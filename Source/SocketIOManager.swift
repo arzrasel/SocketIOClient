@@ -18,7 +18,7 @@ class SocketIOManager {
     private var connectParams: [String: Any] = [String: Any]()
 //    static let sharedInstance = SocketIOManager()
     public var isConnected = false
-    public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+//    public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
     //
     public init(isLog argIsLog: Bool) {
         isConnected = false
