@@ -1,15 +1,14 @@
 //
-//  SocketIOManager.swift
+//  SocketIOHelper.swift
 //  Pods-SocketIOClient_Example
 //
-//  Created by Rz Rasel on 2021-02-10
+//  Created by Rz Rasel on 2021-02-11
 //
 
 import Foundation
-import SocketIO
 
-var onListenerSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
-class SocketIOManager {
+public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+public class SocketIOHelper {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
     public var resetAckEmitter: SocketAckEmitter?
@@ -18,18 +17,19 @@ class SocketIOManager {
     private var connectParams: [String: Any] = [String: Any]()
 //    static let sharedInstance = SocketIOManager()
     public var isConnected = false
-    public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+    var onListenerSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+//    public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
     //
     public init(isLog argIsLog: Bool) {
         isConnected = false
         isLog = argIsLog
         connectParams.removeAll()
     }
-    public func params(key argKey: String, value argValue: Any) -> SocketIOManager {
+    public func params(key argKey: String, value argValue: Any) -> SocketIOHelper {
         connectParams[argKey] = argValue
         return self
     }
-    public func with(url argURL: String) -> SocketIOManager {
+    public func with(url argURL: String) -> SocketIOHelper {
         httpURL = argURL
         return self
     }
