@@ -8,7 +8,7 @@
 import Foundation
 import SocketIO
 
-public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+//public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
 public class SocketIOManager {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
@@ -33,6 +33,9 @@ public class SocketIOManager {
         return self
     }
     public func prepareConnection() {
+        prepare()
+    }
+    public func prepare() {
         guard let url = URL(string: httpURL) else {
             debugLog(message: "Error: url can't parse \(httpURL)")
             return
@@ -149,6 +152,7 @@ public class SocketIOManager {
         print("DEBUG_SOCKET_IO_MANAGER: \(message) \(self.httpURL) File: \(#file) Line: \(#line)")
     }
 }
+public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
 //typealias EventSocketIO = (String, Any, SocketAckEmitter) -> Void
 //var onEventSocketIO: (EventSocketIO)?
 //var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)
