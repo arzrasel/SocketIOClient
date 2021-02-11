@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
 #  s.source_files = 'SocketIOClient/Classes/**/*'
   s.ios.deployment_target = '11.0'
   s.source_files = 'Source/**/*.swift'
-  
+
   # s.resource_bundles = {
   #   'SocketIOClient' => ['SocketIOClient/Assets/*.png']
   # }
