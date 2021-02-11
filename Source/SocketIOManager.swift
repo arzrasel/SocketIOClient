@@ -8,7 +8,7 @@
 import Foundation
 import SocketIO
 
-public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
 public class SocketIOManager {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
@@ -18,6 +18,7 @@ public class SocketIOManager {
     private var connectParams: [String: Any] = [String: Any]()
 //    static let sharedInstance = SocketIOManager()
     public var isConnected = false
+    public var onEventSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
     //
     public init(isLog argIsLog: Bool) {
         isConnected = false
@@ -109,4 +110,11 @@ public class SocketIOManager {
     public func debugLog(message: String) {
         print("DEBUG_SOCKET_IO_MANAGER: \(message) \(self.httpURL) File: \(#file) Line: \(#line)")
     }
+}
+open class SocketIOTest {
+    public private(set) var anyHandler: ((SocketAnyEvent) -> ())?
+    public private(set) var handlers = [SocketEventHandler]()
+}
+public final class SocketAnyEventTest {
+    //
 }
