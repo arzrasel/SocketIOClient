@@ -8,7 +8,7 @@
 import Foundation
 import SocketIO
 
-var onListenerSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
+public var onListenerSocketIO: ((String, Any, SocketAckEmitter) -> Void)!
 public class SocketIOManager {
     private var socketManager: SocketManager!
     public var socket: SocketIOClient!
