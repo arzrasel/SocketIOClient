@@ -17,7 +17,7 @@
 #   * pod lib lint --allow-warnings
 #   * [pod lib lint --allow-warnings --no-clean --verbose]
 #   * Push to git and release
-#   * pod trunk push --allow-warnings ORRR>> pod trunk push SocketIOClient.podspec --allow-warnings
+#   * pod trunk push --allow-warnings >>>ORRR>>> pod trunk push SocketIOClient.podspec --allow-warnings
 # SocketIOClient Version - 1.0.1
 
 Pod::Spec.new do |s|
