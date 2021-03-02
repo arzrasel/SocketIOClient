@@ -31,7 +31,7 @@ pod 'SocketIOClient'
 or
 
 ```SocketIOClientMain
-pod 'SocketIOClient', '~> 0.1'
+pod 'SocketIOClient', '~> 1.0'
 ```
 
 ## Integration In Project
