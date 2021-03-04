@@ -5,19 +5,6 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
-# CREATE
-#   * pod lib create SocketIOClient
-#   * ios>swift>yes>None>No
-#   * Push to git and release
-#   * pod trunk register rashedgit@gmail.com 'Rz Rasel'
-#   * pod lib lint SocketIOClient.podspec --allow-warnings
-#   * [pod lib lint SocketIOClient.podspec --allow-warnings --no-clean --verbose]
-#   * pod trunk push --allow-warnings
-# UPDATE
-#   * pod lib lint --allow-warnings
-#   * [pod lib lint --allow-warnings --no-clean --verbose]
-#   * Push to git and release
-#   * pod trunk push --allow-warnings >>>ORRR>>> pod trunk push SocketIOClient.podspec --allow-warnings
 # SocketIOClient Version - 1.0.1.01
 
 Pod::Spec.new do |s|
